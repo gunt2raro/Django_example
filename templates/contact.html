@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+
+{% if not form == None %}
+<form method="POST" action"" >{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Fuck!" >
+</form>
+{% endif %}
