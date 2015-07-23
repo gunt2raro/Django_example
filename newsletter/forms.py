@@ -5,7 +5,7 @@ from .models import SignUp
 class ContactForm( forms.Form ) : 
 	emai = forms.EmailField()
 	full_name = forms.CharField()
-	message = forms.CharField()
+	message = forms.CharField(widget=forms.Textarea)
 
 class SignUpForm( forms.ModelForm ) : 
 	class Meta:
